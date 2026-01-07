@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio | Web Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault(); // Prevents page reload
+
+        // Basic data collection
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        // Show a loading state
+        const btn = document.querySelector('.send-btn');
+        btn.innerText = "Sending...";
+        btn.style.opacity = "0.7";
+
+        // Simulate an API call delay
+        setTimeout(() => {
+            document.getElementById('contactForm').classList.add('hidden');
+            document.getElementById('responseMessage').classList.remove('hidden');
+            console.log("Form Submitted:", { name, email, message });
+        }, 1500);
+    });
+</script>
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+<!------------------------navbar section start here----------------------------------------------------->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">PORTFOLIO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!------------------------navbar section start here----------------------------------------------------->
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h1>Hi, I'm <span class="accent">Deva</span></h1>
+            <p style="font-size: 1.2rem; line-height: 1.6; color: #94a3b8;">
+                A passionate <span class="accent">Software Developer</span> focused on building 
+                interactive, user-friendly applications and solving complex problems with clean code.
+            </p>
+            <a href="./images/resume.pdf" class="cta-button">Download CV</a>
+        </div>
+
+        <div class="hero-image">
+            <img src="./images/deva.jpeg" alt="Deva's Profile" class="profile-img">
+        </div>
+    </section>
+
+<!------------------------About section start here----------------------------------------------------->
+
+    <section id="about" class="about-section py-5">
+    <div class="container">
+        <h1 class="text-center">About</h1>
+        <div class="row align-items-center">
+            
+            <div class="col-lg-6 mb-5 mb-lg-0 jump-animation">
+                <h6 class="text-primary text-uppercase fw-bold">Who I Am</h6>
+                <h2 class="display-5 fw-bold text-white mb-4">My Name <span class="accent">Is</span> & Deva</h2>
+                <p class="lead text-secondary">
+                    I am Fresher with  Strong Technical Skills and  i  am seeking entry-level job opportunity. 
+                </p>
+                <div class="passion-box p-4 mt-4">
+                    <h4 class="text-white"><i class="bi bi-fire me-2"></i> My Passion</h4>
+                    <p class="text-secondary mb-0">
+                        I don't just write code; I build experiences. My passion lies in **Full-Stack Development** and **UI/UX design**, ensuring that every application I build is as fast as it is beautiful. I love exploring new frameworks and pushing the boundaries of what's possible on the web.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-6 ps-lg-5 jump-animation" style="animation-delay: 0.3s;">
+                <h3 class="text-white mb-4">My Education</h3>
+                
+                <div class="edu-card mb-4 p-3 border-start border-primary border-4 bg-dark-soft">
+                    <span class="badge bg-primary mb-2">2022 - 2025</span>
+                    <h5 class="text-white">Master of Science in Computers</h5>
+                    <p class="text-secondary mb-0">SDHR Pg College from Sri Venkateswara University.</p>
+                </div>
+
+                <div class="edu-card mb-4 p-3 border-start border-info border-4 bg-dark-soft">
+                    <span class="badge bg-info text-dark mb-2">2021</span>
+                    <h5 class="text-white">Bachelore of science</h5>
+                    <p class="text-secondary mb-0">Completed my Bachelors in M.S.cs from vikram simhapuri University</p>
+                </div>
+
+                <div class="edu-card p-3 border-start border-secondary border-4 bg-dark-soft">
+                    <span class="badge bg-info text-dark mb-2">Knowledge</span>
+                    <h5 class="text-white">Full-stack Webdeveloper</h5>
+                    <p class="text-secondary mb-0">Completed My Course in LTE-Tech Soft Solutions</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+   
+ <!--------------------------------my skills secctio----------------------------------->   
+    <section class="skills-section" id="skills">
+   <h1 class="project-title text-center">My Skills</h1>
+    
+    <div class="skills-container">
+        <div class="skills-scroll">
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">Bootstrap</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">Python</div>
+            <div class="skill-card">MySQL</div>
+            <div class="skill-card">React JS</div>
+            
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">Bootstrap</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">Python</div>
+            <div class="skill-card">MySQL</div>
+            <div class="skill-card">React JS</div>
+        </div>
+    </div>
+</section>  
+ 
+
+<!--------------------------------my project secctio----------------------------------->  
+
+<section id="projects" class="project-section">
+    <h1 class="project-title">My Projects</h1>
+    
+    <div class="project-grid">
+        <div class="project-card jump-animation">
+            <div class="project-img-container">
+                <img src="https://via.placeholder.com/400x250/1e293b/38bdf8?text=E-Commerce+App" alt="Project 1">
+            </div>
+            <div class="project-info">
+                <h3>E-Commerce React App</h3>
+                <p>A full-stack store built with React and Python API.</p>
+                <div class="tags"><span>React</span> <span>Python</span></div>
+            </div>
+        </div>
+
+        <div class="project-card jump-animation" style="animation-delay: 0.2s;">
+            <div class="project-img-container">
+                <img src="https://via.placeholder.com/400x250/1e293b/38bdf8?text=Task+Management" alt="Project 2">
+            </div>
+            <div class="project-info">
+                <h3>Task Manager</h3>
+                <p>A smart dashboard to manage daily dev tasks and deadlines.</p>
+                <div class="tags"><span>JavaScript</span> <span>MySQL</span></div>
+            </div>
+        </div>
+
+        <div class="project-card jump-animation" style="animation-delay: 0.4s;">
+            <div class="project-img-container">
+                <img src="https://via.placeholder.com/400x250/1e293b/38bdf8?text=Portfolio+Engine" alt="Project 3">
+            </div>
+            <div class="project-info">
+                <h3>My Portfolio</h3>
+                <p>Highly responsive landing page with modern animations.</p>
+                <div class="tags"><span>HTML</span> <span>Bootstrap</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--------------------------------my Contact secctio----------------------------------->  
+<section id="contact" class="contact-section">
+    <div class="contact-container jump-animation">
+        <h2 class="contact-title">Get In Touch</h2>
+        <p class="contact-subtitle">if any qutions ? My inbox is always open!</p>
+        
+        <form id="contactForm" class="contact-form">
+            <div class="input-group">
+                <input type="text" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="input-group">
+                <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="send-btn">Send Message</button>
+        </form>
+        
+        <div id="responseMessage" class="hidden">
+            <p>🎉 Thanks Deva! Your message has been sent successfully.</p>
+        </div>
+    </div>
+</section>
+
+<!--------------------------------my Footer secctio----------------------------------->  
+
+<footer class="main-footer">
+    <div class="footer-content">
+        <div class="footer-column brand-info">
+            <h2 class="footer-logo">THOTA<span class="accent">.DEVA</span></h2>
+            <p>Building digital experiences with a focus on clean code and user-centric design. Specializing in Python, React, and Modern Web Tech.</p>
+            <div class="social-links">
+                <a href="https://github.com/ThotaDeva09" aria-label="GitHub">GH</a>
+                <a href="https://www.linkedin.com/in/thota-deva-138a12337" aria-label="LinkedIn">IN</a>
+            </div>
+        </div>
+
+        <div class="footer-column">
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Get In Touch</h3>
+            <p>Email: devathota09@gmail.com</p>
+            <p>Location: Hyderabad, S.R Nagar</p>
+            <p>Available for Work: <strong>Yes</strong></p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <hr class="footer-divider">
+        <p>&copy; 2026 Deva. All rights reserved. Designed with ❤️ for Code.</p>
+    </div>
+</footer>
+   
+</body>
+</html>
