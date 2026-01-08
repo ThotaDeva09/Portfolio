@@ -85,7 +85,7 @@ Contact form section
 📷 Preview
 
 (You can add a screenshot here)
-![Portfolio Screenshot](./screenshot.png)
+![Portfolio Screenshot](https://github.com/ThotaDeva09/Portfolio/blob/8dd9c8357fefc73ee17e22252bf4785ce8233d7f/Screenshot_8-1-2026_181412_127.0.0.1.jpeg)
 📬 Contact Me
 
 📧 Email: devathota09@gmail.com
