@@ -5,7 +5,9 @@
 
 🌐 My Portfolio
 
-🔗 Live Demo: portfolio-three-swart-70.vercel.app
+🔗 Live Demo: ## 🌐 Live Demo
+[View Live Project](https://thotadeva09.github.io/Portfolio/)
+
 📂 Repository: This portfolio is built using HTML, CSS, Bootstrap, and JavaScript
 
 🧑‍💻 About Me
